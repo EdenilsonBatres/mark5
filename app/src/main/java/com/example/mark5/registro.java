@@ -79,7 +79,12 @@ public class registro extends AppCompatActivity
                         if (task.isSuccessful())
                         {
                             Toast.makeText(registro.this, "Se a creado tu asquerosa cuenta", Toast.LENGTH_SHORT).show();
-                            goMenu();
+                            Intent intent = new Intent(getApplication(), menu.class);
+                            startActivity(intent);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP| Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                //crear el meto que te lleva al menu
+                                //sin retroceso y el boton de cerrar sesion
+
                         }
                         else
                         {
@@ -95,15 +100,12 @@ public class registro extends AppCompatActivity
                         progressDialog.dismiss();
                     }
 
-                    private void goMenu()
-                    {
-                        //crear el meto que te lleva al menu
-                        //sin retroceso y el boton de cerrar sesion
-                    }
                 });
     }
+
     public void registrarUsuario(View view)
     {
         registrarUsuario();
     }
+
 }

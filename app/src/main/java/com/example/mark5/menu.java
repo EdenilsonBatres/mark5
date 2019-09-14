@@ -15,11 +15,11 @@ public class menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+/*
         if (AccessToken.getCurrentAccessToken() == null)
         {
             goLogin();
-        }
+        }*/
     }
 
     private void goLogin()
