@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">mark5</string>
+    <string name="icono">icono de ellori</string>
+    <string name="icono_dos">segundo icono de ellori</string>
+
+    <string name="icono_log">Icono del loguin</string>
+    <string name="desc_icono">este es el icono</string>
+    <string name="facebook_app_id">2280148148962434</string>
+    <string name="fb_login_protocol_scheme">fb2280148148962434</string>
+    <string name="correo">Introduce tu Correo electronico</string>
+    <string name="pass">Introduce tu Contraseña</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="btn_registrar">Registrarse</string>
+    <string name="btn_saltar">Saltar</string>
+    <string name="forget_password">¿Has olvidado tu contraseña?</string>
+
 </resources>
