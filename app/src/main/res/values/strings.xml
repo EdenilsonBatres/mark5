@@ -14,4 +14,10 @@
     <string name="btn_saltar">Saltar</string>
     <string name="forget_password">¿Has olvidado tu contraseña?</string>
 
+    <string name="icono_registro">Icono de la activity registro</string>
+    <string name="registrarse">¡¡Registrate en Ellori!!</string>
+    <string name="text_correo">Ingresa un correo electronico bb</string>
+    <string name="text_pass">Ingresa una contraseña bb</string>
+    <string name="conf_pass">Confirma tu contraseña bb</string>
+
 </resources>
