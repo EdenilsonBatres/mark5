@@ -20,4 +20,6 @@
     <string name="text_pass">Ingresa una contraseña bb</string>
     <string name="conf_pass">Confirma tu contraseña bb</string>
 
+    <string name="btn_info">boton a la funcionalidad</string>
+
 </resources>

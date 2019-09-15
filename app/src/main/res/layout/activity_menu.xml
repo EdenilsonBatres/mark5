@@ -4,28 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1c1a57"
     tools:context=".menu">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="287dp"
-        android:text="hola putos"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="413dp"
+        android:layout_height="94dp"
+        android:background="#151741"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="407dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="8dp"
-        android:onClick="logout"
-        android:text="salir"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="70dp"
+        android:background="#1C1A57"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/gesto_voz"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerInside"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/dos" />
+
+            <ImageButton
+                android:id="@+id/gesto_texto"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="137dp"
+                android:layout_height="142dp"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerInside"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/tres" />
+
+            <ImageButton
+                android:id="@+id/texto_voz"
+                android:layout_width="137dp"
+                android:layout_height="match_parent"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerInside"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/cinco" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="104dp">
+
+            <ImageButton
+                android:id="@+id/texto_gestos"
+                android:layout_width="wrap_content"
+                android:layout_height="156dp"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerInside"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/diesiseis" />
+
+            <ImageButton
+                android:id="@+id/voz_gestos"
+                android:layout_width="137dp"
+                android:layout_height="match_parent"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerCrop"
+                app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+            <ImageButton
+                android:id="@+id/voz_texto"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerCrop"
+                android:tint="#E4EAEE"
+                app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="201dp">
+
+            <ImageButton
+                android:id="@+id/diccionario"
+                android:layout_width="125dp"
+                android:layout_height="146dp"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerCrop"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/siete" />
+
+            <ImageButton
+                android:id="@+id/configuracion"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="fitStart"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/dies" />
+
+            <ImageButton
+                android:id="@+id/consejos"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:background="#2a93ff"
+                android:contentDescription="@string/btn_info"
+                android:scaleType="centerCrop"
+                android:tint="#E4EAEE"
+                app:srcCompat="@mipmap/seis" />
+
+        </TableRow>
+
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -81,7 +81,11 @@ public class registro extends AppCompatActivity
                             Toast.makeText(registro.this, "Se a creado tu asquerosa cuenta", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplication(), menu.class);
                             startActivity(intent);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP| Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP| Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            finish();
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                                 //crear el meto que te lleva al menu
                                 //sin retroceso y el boton de cerrar sesion
 
