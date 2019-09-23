@@ -9,13 +9,29 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="413dp"
-        android:layout_height="94dp"
+        android:layout_width="415dp"
+        android:layout_height="66dp"
         android:background="#151741"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:contentDescription="@string/icono_menu"
+            android:tint="#E4EAEE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/home" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TableLayout
@@ -40,6 +56,7 @@
                 android:layout_height="match_parent"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerInside"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/dos" />
@@ -51,6 +68,7 @@
                 android:layout_height="142dp"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerInside"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/tres" />
@@ -61,6 +79,7 @@
                 android:layout_height="match_parent"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerInside"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/cinco" />
@@ -77,6 +96,7 @@
                 android:layout_height="156dp"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerInside"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/diesiseis" />
@@ -87,6 +107,7 @@
                 android:layout_height="match_parent"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerCrop"
                 app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
@@ -96,6 +117,7 @@
                 android:layout_height="match_parent"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerCrop"
                 android:tint="#E4EAEE"
                 app:srcCompat="@android:drawable/ic_btn_speak_now" />
@@ -112,6 +134,7 @@
                 android:layout_height="146dp"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerCrop"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/siete" />
@@ -123,6 +146,7 @@
                 android:adjustViewBounds="false"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="fitStart"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/dies" />
@@ -133,6 +157,7 @@
                 android:layout_height="match_parent"
                 android:background="#2a93ff"
                 android:contentDescription="@string/btn_info"
+                android:onClick="onClick"
                 android:scaleType="centerCrop"
                 android:tint="#E4EAEE"
                 app:srcCompat="@mipmap/seis" />
