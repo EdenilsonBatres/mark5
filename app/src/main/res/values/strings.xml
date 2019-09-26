@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">mark5</string>
+    <string name="app_name">Ellori</string>
     <string name="icono">icono de ellori</string>
     <string name="icono_dos">segundo icono de ellori</string>
 
@@ -23,5 +23,21 @@
     <string name="btn_info">boton a la funcionalidad</string>
 
     <string name="icono_menu">icono del menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ellori</string>
+    <string name="nav_header_subtitle">Sing Languaje System</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_tutorial">Tutorial</string>
+    <string name="menu_configuracione">Configuracion</string>
+    <string name="menu_Consejos">Consejos</string>
+    <string name="menu_sugerencias">Sugerencias</string>
+    <string name="menu_ajustes">Ajustes</string>
+    <string name="menu_salir">Salir</string>
+
+    <string name="constraintLayout">caja fuerte</string>
+    <string name="title_activity_menusito"></string>
 
 </resources>

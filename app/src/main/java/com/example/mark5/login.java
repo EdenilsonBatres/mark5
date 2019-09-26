@@ -90,7 +90,7 @@ public class login extends AppCompatActivity
 
     public  void al_menu(View view)//funcion que inicia la activity de menu
     {
-        Intent intent = new Intent(login.this, menu.class);
+        Intent intent = new Intent(login.this, menusito.class);
         startActivity(intent);//inicia la activity menu
         finish();//finaliza la activity de login
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//desabilita la accion de regresar
