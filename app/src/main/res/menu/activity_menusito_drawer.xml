@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_tutorial"
             android:icon="@mipmap/catorce"
             android:title="@string/menu_tutorial" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_configuracion"
             android:icon="@mipmap/dies"
             android:title="@string/menu_configuracione" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_consejos"
             android:icon="@mipmap/consejos"
             android:title="@string/menu_Consejos" />
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/nav_sugerencias"
             android:icon="@mipmap/once"
             android:title="@string/menu_sugerencias" />
     </group>
@@ -25,11 +25,11 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_ajustes"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="@string/menu_ajustes" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_salir"
                 android:icon="@mipmap/power"
                 android:title="@string/menu_salir" />
         </menu>
