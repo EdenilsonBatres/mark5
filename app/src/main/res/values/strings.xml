@@ -41,5 +41,15 @@
     <string name="title_activity_menusito"></string>
 
     <string name="menu_imagen">imagen del menu</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="conexion">Conexion</string>
+    <string name="recibiendo">Interpretando</string>
+    <string name="icono_de_las_pantallas">iconos de las pantallas</string>
+    <string name="txt_pantallas">Textos de las pantallas</string>
+
+    <string name="btn_comenzar">comenzar</string>
+    <string name="btn_detener">detener</string>
+    <string name="btn_volver">volver</string>
+
 
 </resources>
