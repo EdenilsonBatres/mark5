@@ -73,8 +73,8 @@ public class registro extends AppCompatActivity
                     {
                         if (task.isSuccessful())//si el correo y la contraseña se han guardado correctamente
                         {
-                            Toast.makeText(registro.this, "Se a creado tu asquerosa cuenta", Toast.LENGTH_SHORT).show();//muestra un mensaje emergente
-                            Intent intent = new Intent(getApplication(), menu.class);//inicia una nueva actividad
+                            Toast.makeText(registro.this, "Se a creado tu cuenta", Toast.LENGTH_SHORT).show();//muestra un mensaje emergente
+                            Intent intent = new Intent(getApplication(), menusito.class);//inicia una nueva actividad
                             startActivity(intent);//ejecuta la actividad de menu
                             finish();//finaliza la activity de registro
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//desactiva la accion de volver a la activity de registro
@@ -88,7 +88,7 @@ public class registro extends AppCompatActivity
                         {
                             if (task.getException() instanceof FirebaseAuthUserCollisionException)//si hay alguna colision muestra el siguiente mensaje
                             {
-                                Toast.makeText(registro.this, "ya existe tu cuenta, intenta con otra", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(registro.this, "ya existe esta cuenta, intenta con otra", Toast.LENGTH_SHORT).show();
                             }
                             else//si se produce un error desconocido , muestra el siguiente mensaje
                             {

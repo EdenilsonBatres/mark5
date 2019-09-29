@@ -9,131 +9,158 @@
     tools:context=".menusito"
     tools:showIn="@layout/app_bar_menusito">
 
-    <TableLayout
-        android:layout_width="395dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/gesto_texto_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintEnd_toStartOf="@+id/texto_voz_btn"
+            app:layout_constraintStart_toEndOf="@+id/gesto_voz_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/tres" />
 
-            <ImageButton
-                android:id="@+id/gesto_voz_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#F1EDED"
-                app:srcCompat="@mipmap/dos" />
+        <ImageButton
+            android:id="@+id/gesto_voz_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#F1EDED"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/dos" />
 
-            <ImageButton
-                android:id="@+id/gesto_texto_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/tres" />
+        <ImageButton
+            android:id="@+id/texto_voz_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/cinco" />
 
-            <ImageButton
-                android:id="@+id/texto_voz_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/cinco" />
-        </TableRow>
+        <ImageButton
+            android:id="@+id/texto_gestos_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gesto_voz_btn"
+            app:srcCompat="@mipmap/diesiseis" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/vos_gesto_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintEnd_toStartOf="@+id/voz_texto_btn"
+            app:layout_constraintStart_toEndOf="@+id/texto_gestos_btn"
+            app:layout_constraintTop_toBottomOf="@+id/gesto_texto_btn"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
-            <ImageButton
-                android:id="@+id/texto_gestos_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/diesiseis" />
+        <ImageButton
+            android:id="@+id/voz_texto_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:tint="#FFF1EDED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_voz_btn"
+            app:srcCompat="@mipmap/ocho" />
 
-            <ImageButton
-                android:id="@+id/vos_gesto_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+        <ImageButton
+            android:id="@+id/diccionario_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_gestos_btn"
+            app:srcCompat="@mipmap/siete" />
 
-            <ImageButton
-                android:id="@+id/voz_texto_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitCenter"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/ocho" />
-        </TableRow>
+        <ImageButton
+            android:id="@+id/configuracion_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintEnd_toStartOf="@+id/consejos_btn"
+            app:layout_constraintStart_toEndOf="@+id/diccionario_btn"
+            app:layout_constraintTop_toBottomOf="@+id/vos_gesto_btn"
+            app:srcCompat="@mipmap/doce" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/consejos_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#2a93ff"
+            android:contentDescription="@string/icono_menu"
+            android:onClick="onclick"
+            android:scaleType="fitEnd"
+            android:tint="#FFF1EDED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voz_texto_btn"
+            app:srcCompat="@mipmap/seis" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <ImageButton
-                android:id="@+id/diccionario_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/siete" />
-
-            <ImageButton
-                android:id="@+id/configuracion_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/doce" />
-
-            <ImageButton
-                android:id="@+id/consejos_btn"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:background="#2a93ff"
-                android:contentDescription="@string/icono_menu"
-                android:onClick="onclick"
-                android:scaleType="fitEnd"
-                android:tint="#FFF1EDED"
-                app:srcCompat="@mipmap/seis" />
-        </TableRow>
-
-    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

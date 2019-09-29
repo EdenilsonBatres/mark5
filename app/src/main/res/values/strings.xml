@@ -40,4 +40,6 @@
     <string name="constraintLayout">caja fuerte</string>
     <string name="title_activity_menusito"></string>
 
+    <string name="menu_imagen">imagen del menu</string>
+
 </resources>

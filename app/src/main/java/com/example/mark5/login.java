@@ -71,7 +71,7 @@ public class login extends AppCompatActivity
 
     private void goMenu()//metodo que abre una nueva activity llamada menu
     {
-        Intent intent = new Intent(this, menu.class);//inicio del metodo Intent que genera el evento de abrir una nueva activity
+        Intent intent = new Intent(this, menusito.class);//inicio del metodo Intent que genera el evento de abrir una nueva activity
         startActivity(intent);//inicializa la activity
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);//bloquea la accion de volver al login
     }
@@ -131,7 +131,7 @@ public class login extends AppCompatActivity
                         if (task.isSuccessful())
                         {
                             Toast.makeText(login.this, "bienvenido a tu cuenta", Toast.LENGTH_SHORT).show();//muestra un mensaje emergente
-                            Intent intent = new Intent(getApplication(), menu.class);//inicializa una nueva actividad
+                            Intent intent = new Intent(getApplication(), menusito.class);//inicializa una nueva actividad
                             startActivity(intent);//ejecuta la actividad de menu
                             finish();//finaliza la actividad de login
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//desactiva la accion de volver a login
