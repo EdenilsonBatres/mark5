@@ -51,5 +51,8 @@
     <string name="btn_detener">detener</string>
     <string name="btn_volver">volver</string>
 
+    <string name="informativo_señas_texto">Aqui aparecera el texto que se espera interpretar desde el dispositivo guante</string>
+    <string name="btn_traducir">Traducir</string>
+
 
 </resources>

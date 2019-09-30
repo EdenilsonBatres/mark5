@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".menu" />
         <activity android:name=".consejos" />
         <activity android:name=".configuracion" />
         <activity android:name=".diccionario" />

@@ -35,11 +35,13 @@ public class gesto_voz extends AppCompatActivity
                 Toast.makeText(this, "Regresando al menu", Toast.LENGTH_SHORT).show();
                 Intent volver = new Intent(this, menusito.class);
                 startActivity(volver);
+                finish();
                 break;
             case R.id.icon_btn:
                 Toast.makeText(this, "Volviendo",Toast.LENGTH_SHORT).show();
                 Intent regresar = new Intent(this, menusito.class);
                 startActivity(regresar);
+                finish();
                 break;
             case R.id.icono_mano:
                 Toast.makeText(this,"Puto el que lo Lea",Toast.LENGTH_SHORT).show();
