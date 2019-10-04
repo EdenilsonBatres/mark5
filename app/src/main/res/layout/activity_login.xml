@@ -55,12 +55,12 @@
             android:layout_height="20dp" />
 
         <EditText
-            android:id="@+id/texto_contraseña"
+            android:id="@+id/texto_correo"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:ems="10"
-            android:hint="@string/pass"
-            android:inputType="textPassword"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
             android:textColorHint="#DEEBF7" />
 
         <Space
@@ -68,12 +68,12 @@
             android:layout_height="20dp" />
 
         <EditText
-            android:id="@+id/texto_correo"
+            android:id="@+id/texto_contraseña"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:ems="10"
-            android:hint="@string/correo"
-            android:inputType="textEmailAddress"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
             android:textColorHint="#DEEBF7" />
 
         <Space
