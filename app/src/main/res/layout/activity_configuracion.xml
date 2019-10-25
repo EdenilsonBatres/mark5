@@ -43,6 +43,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="2dp"
+            android:contentDescription="@string/descripcionConfiguracion"
             android:onClick="cklic"
             android:tint="#E8EDF0"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +51,8 @@
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toEndOf="@+id/imageView14"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/dies" />
+            app:srcCompat="@mipmap/dies"
+            tools:srcCompat="@mipmap/dies" />
 
         <ImageView
             android:id="@+id/imageView14"
@@ -58,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
+            android:contentDescription="@string/descripcionConfiguracion"
             android:onClick="cklic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +108,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:onClick="click"
-            android:text="Activar"
+            android:text="@string/txtAjustesActivar"
             android:textColor="#969899"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -120,7 +123,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="25dp"
-        android:text="Visibilidad"
+        android:text="@string/txtVisibilidadActivar"
         android:textColor="#4B4A4D"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +151,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
-        android:text="Disposivos"
+        android:text="@string/txtDispositivosActivar"
         android:textColor="#4B4A4D"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -176,7 +179,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:onClick="click"
-        android:text="Activar"
+        android:text="@string/txtAjustesActivar"
         android:textColor="#727772"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout13" />

@@ -57,4 +57,26 @@
     <string name="title_activity_scrolling">Ellori menu</string>
     <string name="title_activity_emociones_dos">emociones_dos</string>
 
+
+    <string name="descripcion_ajustes">activity ajues</string>
+    <string name="Correo_ajustes">Correo</string>
+    <string name="nombre_ajustes">Nombre de usuario</string>
+    <string name="btn_Guardar_ajustes">Guardar</string>
+    <string name="abrirAlgunoAjustes">Abrir alguno</string>
+
+    <string name="descripcionAnimales">activity animales</string>
+    <string name="btn_GuardarBuscarAnimales">Buscar</string>
+    <string name="Busca_aUnAnimal">Busca a un animal</string>
+    <string name="animalesAnimales">Animales</string>
+
+    <string name="descripcionComida">activity comida</string>
+    <string name="btn_GuardarBuscarComida">Buscar</string>
+    <string name="Busca_aUnComida">Busca a un alimento</string>
+    <string name="comidaComida">Alimentos</string>
+
+    <string name="descripcionConfiguracion">activity Configuracion</string>
+    <string name="txtVisibilidadActivar">Visibilidad</string>
+    <string name="txtDispositivosActivar">Dispositivos</string>
+    <string name="txtAjustesActivar">Activar</string>
+
 </resources>
