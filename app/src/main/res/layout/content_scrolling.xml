@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/Manimales"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/muno" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mfamilia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mdos" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mfrutas"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mtres" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mestaciones"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mcuatro" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Memociones"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mcinco" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mpersonas"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mseis" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mprofeciones"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/msiete" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mropa"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mocho" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mexprecioncomun"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mnueve" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/MpreguntasComunes"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mdiez" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mdeportes"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/monce" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Mcomida"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mdoce" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Msaludos"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mtrece" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ImageButton
+            android:id="@+id/Memergencia"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDFDFE"
+            android:contentDescription="@string/Mdesc"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/mquince" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

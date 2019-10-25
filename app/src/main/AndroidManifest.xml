@@ -3,6 +3,7 @@
     package="com.example.mark5">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,17 +12,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-
+        <activity android:name=".ajustes"></activity>
+        <activity android:name=".sugerencias" />
+        <activity android:name=".tutorial" />
+        <activity android:name=".ropa_dos" />
+        <activity android:name=".profesiones_dos" />
+        <activity android:name=".expresionComun_dos" />
+        <activity android:name=".preguntasComunes_dos" />
+        <activity android:name=".frutas_dos" />
+        <activity android:name=".estaciones_dos" />
+        <activity android:name=".emociones_dos" />
+        <activity android:name=".deportes_dos" />
+        <activity android:name=".comida_dos" />
+        <activity android:name=".animales_dos" />
+        <activity android:name=".saludos_dos" />
+        <activity android:name=".familia_dos" />
+        <activity android:name=".voz_gestos" />
+        <activity android:name=".emergencia" />
+        <activity android:name=".entretenimiento" />
+        <activity android:name=".saludos" />
+        <activity android:name=".comida" />
+        <activity android:name=".deportes" />
+        <activity android:name=".preguntasComunes" />
+        <activity android:name=".expresionComun" />
+        <activity android:name=".ropa" />
+        <activity android:name=".profesiones" />
+        <activity android:name=".personas" />
+        <activity android:name=".emociones" />
+        <activity android:name=".estaciones" />
+        <activity android:name=".frutas" />
+        <activity android:name=".familia" />
+        <activity android:name=".animales" />
         <activity android:name=".consejos" />
         <activity android:name=".configuracion" />
         <activity android:name=".diccionario" />
+        <activity android:name=".ScrollingActivity" />
         <activity android:name=".voz_texto" />
-        <activity android:name=".voz_gesto" />
-        <activity android:name=".texto_gesto" />
         <activity android:name=".texto_voz" />
         <activity android:name=".gesto_texto" />
         <activity android:name=".gesto_voz" />
-        <activity android:name=".menusito"/>
+        <activity android:name=".menusito" />
         <activity android:name=".registro" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity">

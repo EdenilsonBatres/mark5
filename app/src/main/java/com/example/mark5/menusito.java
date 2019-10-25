@@ -11,7 +11,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 
 import android.view.MenuItem;
 
-import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.android.material.navigation.NavigationView;
 
@@ -70,74 +69,118 @@ public class menusito extends AppCompatActivity
         //si el id es nav_tutorial ara lo siguiente
         if (id == R.id.nav_tutorial)
         {
-            Toast.makeText(this,"al tutorial", Toast.LENGTH_SHORT).show();//se abrira una activity
+            //Toast.makeText(this,"al tutorial", Toast.LENGTH_SHORT).show();//se abrira una activity
+            Intent intent = new Intent(this, tutorial.class);
+            startActivity(intent);
+            finish();
         }
         //si el id es nav_configuracion ara lo siguiente
         else if (id == R.id.nav_configuracion)
         {
+            Intent intent = new Intent(this, configuracion.class);
+            startActivity(intent);
+            finish();
         //aun no definido
         }
         else if (id == R.id.nav_consejos)
         {
+            Intent intent = new Intent(this, consejos.class);
+            startActivity(intent);
+            finish();
             //aun no definido
         }
         else if (id == R.id.nav_sugerencias)
         {
+            Intent intentsug = new Intent(this, sugerencias.class);
+            startActivity(intentsug);
+            finish();
             //aun no definido
         }
         else if (id == R.id.nav_ajustes)
         {
-            //aun no definido
-        }
-        //si se selecciona la opcion de salir ara lo siguiente
-        else if (id == R.id.nav_salir)
-        {
-            //LoginManager.getInstance().logOut();
-           System.exit(0);//cerrara la aplicacion
+            Intent intentaj = new Intent(this, ajustes.class);
+            startActivity(intentaj);
+            finish();
+
         }
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);//verifica el estado del menu desplegable
-        drawer.closeDrawer(GravityCompat.START);//automaticamente cierra el menu y lo prepara para volverlo a iniciar
+        else if (id == R.id.nav_salir)
+        {
+            LoginManager.getInstance().logOut();
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+
+
+
+          // System.exit(0);//cerrara la aplicacion
+
+        }
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-//si se hace click en algun item de menu principal
-    public void onclick (View view)//metodo onClick
+
+    public void onclick (View view)
     {
         switch (view.getId())//la funcion view que conecta con la vista verifica el id seleccionado
         {
             case R.id.gesto_voz_btn://si el se selecciona el boton de gesto_voz ejecuta lo siguiente
                 Intent gesto_voz_btn = new Intent(this, gesto_voz.class);
                 startActivity(gesto_voz_btn);//abre la activity gesto-voz
+               // finish();
                 break;
             case R.id.gesto_texto_btn://si el se selecciona el boton de gesto_texto ejecuta lo siguiente
                 Intent gesto_texto_btn = new Intent(this, gesto_texto.class);
                 startActivity(gesto_texto_btn);//abre la activity gesto-texto
+              //  finish();
                 break;
             case R.id.texto_voz_btn://si el se selecciona el boton de texto-voz ejecuta lo siguiente
                 Intent texto_voz_btn = new Intent(this, texto_voz.class);
                 startActivity(texto_voz_btn);//abre la activity texto-voz
+              //  finish();
                 break;
             case R.id.texto_gestos_btn://si el se selecciona el boton de texto-gestos ejecuta lo siguiente
-                Intent texto_gestos_btn = new Intent(this, texto_gesto.class);
+                Intent texto_gestos_btn = new Intent(this, ScrollingActivity.class);
                 startActivity(texto_gestos_btn);//abre la activity texto-gestos
+             //   finish();
                 break;
             case R.id.vos_gesto_btn://si el se selecciona el boton de vos_gesto ejecuta lo siguiente
-                Intent voz_gesto_btn = new Intent(this, voz_gesto.class);
+                Intent voz_gesto_btn = new Intent(this, voz_gestos.class);
                 startActivity(voz_gesto_btn);//abre la activity vos_gesto
+             //   finish();
                 break;
             case R.id.voz_texto_btn://si el se selecciona el boton de gesto_voz_texto lo siguiente
                 Intent voz_texto_btn = new Intent(this, voz_texto.class);
                 startActivity(voz_texto_btn);//abre la activity voz_texto
+              //  finish();
                 break;
             case R.id.configuracion_btn://si el se selecciona el boton de configuracion ejecuta lo siguiente
                 Intent configiracion_btn= new Intent(this, configuracion.class);
                 startActivity(configiracion_btn);//abre la activity configuracion
+               // finish();
                 break;
             case R.id.consejos_btn://si el se selecciona el boton de .consejos ejecuta lo siguiente
                 Intent consejos_btn= new Intent(this, consejos.class);
                 startActivity(consejos_btn);//abre la activity consejos
+                finish();
+                break;
+            case R.id.diccionario_btn://si el se selecciona el boton de .diccionario ejecuta lo siguiente
+                Intent diccionario_btn= new Intent(this, diccionario.class);
+                startActivity(diccionario_btn);//abre la activity consejos
+         //       finish();
                 break;
 
         }
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        LoginManager.getInstance().logOut();
+        super.onDestroy();
+        finish();
     }
 }

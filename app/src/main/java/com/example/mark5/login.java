@@ -33,6 +33,7 @@ public class login extends AppCompatActivity
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
 
+
 //inicio de metodo onCreate que se ejecuta al iniciarse la parte grafica del activity
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -52,7 +53,10 @@ public class login extends AppCompatActivity
             @Override
             public void onSuccess(LoginResult loginResult)
             {
-                goMenu();
+                Intent intent = new Intent(login.this, menusito.class);
+                startActivity(intent);
+                finish();
+               // goMenu();
             }//si el inicio de sesion con faceboook es exitoso, automaticamente llama al objeto goMenu
 
             @Override
@@ -69,12 +73,13 @@ public class login extends AppCompatActivity
         });
     }
 
-    private void goMenu()//metodo que abre una nueva activity llamada menu
+  /*  private void goMenu()//metodo que abre una nueva activity llamada menu
     {
         Intent intent = new Intent(this, menusito.class);//inicio del metodo Intent que genera el evento de abrir una nueva activity
         startActivity(intent);//inicializa la activity
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);//bloquea la accion de volver al login
-    }
+        finish();
+    }*/
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)//funcion que muestra el resultado del inicio de sesion con facebook
     {
@@ -109,7 +114,7 @@ public class login extends AppCompatActivity
 
         if (TextUtils.isEmpty(email))//condicion que indica si el campo de correo esta vacio
         {
-            Toast.makeText(this, "debes igresar un email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Ingresar un email", Toast.LENGTH_SHORT).show();
             return;
         }
         if (TextUtils.isEmpty(pass))//condicion que indica si el campo de contraseña esta vacio
@@ -117,7 +122,7 @@ public class login extends AppCompatActivity
             Toast.makeText(this, "Debes ingresar una contraseña ", Toast.LENGTH_SHORT).show();
             return;
         }
-        progressDialog.setMessage("se esta comprovando tu inicio de secion ");//barra de proceso que compara el correo y la contraseña con la base de datos
+        progressDialog.setMessage("se esta comprovando tu inicio de sesion ");//barra de proceso que compara el correo y la contraseña con la base de datos
         progressDialog.show();
 
         //creando la autenticacion

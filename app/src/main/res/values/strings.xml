@@ -51,8 +51,10 @@
     <string name="btn_detener">detener</string>
     <string name="btn_volver">volver</string>
 
+    <string name="Mdesc">Este es una imagen boton</string>
     <string name="informativo_señas_texto">Aqui aparecera el texto que se espera interpretar desde el dispositivo guante</string>
     <string name="btn_traducir">Traducir</string>
-
+    <string name="title_activity_scrolling">Ellori menu</string>
+    <string name="title_activity_emociones_dos">emociones_dos</string>
 
 </resources>

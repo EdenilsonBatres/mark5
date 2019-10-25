@@ -17,6 +17,8 @@ public class gesto_voz extends AppCompatActivity
         setContentView(R.layout.activity_gesto_voz);//enlace con la interfaz xml
     }
 
+
+
     public void siClick(View view)//funcion onClick
     {
         switch (view.getId())//swich para verificar que botones an sido seleccionados
@@ -44,7 +46,7 @@ public class gesto_voz extends AppCompatActivity
                 finish();
                 break;
             case R.id.icono_mano://si se preciona el icono de la manita te mostrara un mensaje
-                Toast.makeText(this,"El camino a 100 años luz, comienza con el primer paso",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this,"El camino a 100 años luz, comienza con el primer paso",Toast.LENGTH_SHORT).show();
                 break;
         }
     }

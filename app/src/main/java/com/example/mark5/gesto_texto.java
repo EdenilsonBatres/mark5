@@ -43,7 +43,7 @@ public class gesto_texto extends AppCompatActivity {
                 finish();
                 break;
             case R.id.icono_mano://si se preciona el icono de la manita te mostrara un mensaje
-                Toast.makeText(this,"Los sueños rigen tu destino",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this,"Los sueños rigen tu destino",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.icono_bluetooth://si se preciona el icono de bluetooth mostrara un mensaje
                 Toast.makeText(this,"Reintentando la conexion Bluetooth",Toast.LENGTH_SHORT).show();

@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/gesto_texto_btn"
+            android:id="@+id/gesto_voz_btn"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -36,12 +36,13 @@
             android:scaleType="fitEnd"
             android:tint="#FFF1EDED"
             app:layout_constraintEnd_toStartOf="@+id/texto_voz_btn"
-            app:layout_constraintStart_toEndOf="@+id/gesto_voz_btn"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/gesto_texto_btn"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@mipmap/tres" />
 
         <ImageButton
-            android:id="@+id/gesto_voz_btn"
+            android:id="@+id/gesto_texto_btn"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="8dp"
@@ -79,7 +80,7 @@
             android:scaleType="fitEnd"
             android:tint="#FFF1EDED"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gesto_voz_btn"
+            app:layout_constraintTop_toBottomOf="@+id/gesto_texto_btn"
             app:srcCompat="@mipmap/diesiseis" />
 
         <ImageButton
@@ -94,12 +95,13 @@
             android:background="#2a93ff"
             android:contentDescription="@string/icono_menu"
             android:onClick="onclick"
-            android:scaleType="fitEnd"
+            android:scaleType="fitXY"
             android:tint="#FFF1EDED"
             app:layout_constraintEnd_toStartOf="@+id/voz_texto_btn"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/texto_gestos_btn"
-            app:layout_constraintTop_toBottomOf="@+id/gesto_texto_btn"
-            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            app:layout_constraintTop_toBottomOf="@+id/gesto_voz_btn"
+            app:srcCompat="@mipmap/icono" />
 
         <ImageButton
             android:id="@+id/voz_texto_btn"
@@ -144,6 +146,7 @@
             android:scaleType="fitEnd"
             android:tint="#FFF1EDED"
             app:layout_constraintEnd_toStartOf="@+id/consejos_btn"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/diccionario_btn"
             app:layout_constraintTop_toBottomOf="@+id/vos_gesto_btn"
             app:srcCompat="@mipmap/doce" />
