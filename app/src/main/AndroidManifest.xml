@@ -11,7 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".menu"></activity>
+
+        <activity android:name=".consejos" />
+        <activity android:name=".configuracion" />
+        <activity android:name=".diccionario" />
+        <activity android:name=".voz_texto" />
+        <activity android:name=".voz_gesto" />
+        <activity android:name=".texto_gesto" />
+        <activity android:name=".texto_voz" />
+        <activity android:name=".gesto_texto" />
+        <activity android:name=".gesto_voz" />
+        <activity android:name=".menusito"/>
+        <activity android:name=".registro" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity">
             <intent-filter>
