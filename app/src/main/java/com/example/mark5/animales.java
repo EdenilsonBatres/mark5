@@ -342,7 +342,7 @@ public class animales extends AppCompatActivity
         {
             Toast.makeText(contexto, "Busca a un animal", Toast.LENGTH_SHORT).show();
             mostrarImagen = (ImageView) findViewById(R.id.imageView);
-            Glide.with(contexto).load(R.drawable.tenor).into(mostrarImagen);
+            Glide.with(contexto).load(R.mipmap.muno).into(mostrarImagen);
         }
 
     }

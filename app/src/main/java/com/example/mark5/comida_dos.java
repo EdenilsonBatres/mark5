@@ -213,11 +213,6 @@ public class comida_dos extends AppCompatActivity
                                     Glide.with(contexto).load(Ensalada).into(mostrarImagen);
                                     Toast.makeText(contexto, "Palabra Encontrada", Toast.LENGTH_SHORT).show();
 
-                                default:
-                                    mostrarImagen = (ImageView) findViewById(R.id.imageView);
-                                    Glide.with(contexto).load(R.drawable.tenor).into(mostrarImagen);
-                                    break;
-
                             }
                             break;
 
