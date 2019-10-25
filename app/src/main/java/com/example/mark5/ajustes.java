@@ -28,10 +28,12 @@ public class ajustes extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajustes);
+
         myRootReference = FirebaseDatabase.getInstance().getReference();
         txtNombreUsuario = (EditText) findViewById(R.id.nombreUsuario);
         txtCorreoUsuario = (EditText) findViewById(R.id.correoUsuario);
         btnGuardar = (Button)findViewById(R.id.btnGuardar);
+
         btnGuardar.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -40,16 +42,12 @@ public class ajustes extends AppCompatActivity
 
                 String nombreString = txtNombreUsuario.getText().toString();
                 String correoString = txtCorreoUsuario.getText().toString();
-                Toast.makeText(getApplicationContext(), "registrado",Toast.LENGTH_LONG).show();
-                txtNombreUsuario.setText(" ");
-                txtCorreoUsuario.setText(" ");
-
 
                 Map<String, Object> Datos = new HashMap<>();
                 Datos.put("nombre",nombreString);
                 Datos.put("correo",correoString);
 
-                myRootReference.child("usuario").push().setValue(Datos);
+                myRootReference.child("Usuario").push().setValue(Datos);
             }
         });
 

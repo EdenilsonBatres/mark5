@@ -61,44 +61,53 @@ public class registro extends AppCompatActivity
             return;
         }
 
-        progressDialog.setMessage("Se esta realizando el registro ");//barra de progeso que guarda el correo y la contraseña en la base de datos
-        progressDialog.show();
+        if (pass.equals(conf_pass))
+        {
+            progressDialog.setMessage("Se esta realizando el registro ");//barra de progeso que guarda el correo y la contraseña en la base de datos
+            progressDialog.show();
 
 
-        firebaseAuth.createUserWithEmailAndPassword(email, pass)//funcion que crea un nuevo usuario en la base de datos firebase
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
-                {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task)
+            firebaseAuth.createUserWithEmailAndPassword(email, pass)//funcion que crea un nuevo usuario en la base de datos firebase
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
                     {
-                        if (task.isSuccessful())//si el correo y la contraseña se han guardado correctamente
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task)
                         {
-                            Toast.makeText(registro.this, "Se a creado tu cuenta", Toast.LENGTH_SHORT).show();//muestra un mensaje emergente
-                            Intent intent = new Intent(getApplication(), menusito.class);//inicia una nueva actividad
-                            startActivity(intent);//ejecuta la actividad de menu
-                            finish();//finaliza la activity de registro
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//desactiva la accion de volver a la activity de registro
-                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            if (task.isSuccessful())//si el correo y la contraseña se han guardado correctamente
+                            {
+                                Toast.makeText(registro.this, "Se a creado tu cuenta", Toast.LENGTH_SHORT).show();//muestra un mensaje emergente
+                                Intent intent = new Intent(getApplication(), menusito.class);//inicia una nueva actividad
+                                startActivity(intent);//ejecuta la actividad de menu
+                                finish();//finaliza la activity de registro
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//desactiva la accion de volver a la activity de registro
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                                 //crear el meto que te lleva al menu
                                 //sin retroceso y el boton de cerrar sesion
 
-                        }
-                        else//si el inicio de sesion genera algun error
-                        {
-                            if (task.getException() instanceof FirebaseAuthUserCollisionException)//si hay alguna colision muestra el siguiente mensaje
-                            {
-                                Toast.makeText(registro.this, "ya existe esta cuenta, intenta con otra", Toast.LENGTH_SHORT).show();
                             }
-                            else//si se produce un error desconocido , muestra el siguiente mensaje
+                            else//si el inicio de sesion genera algun error
                             {
-                                Toast.makeText(registro.this, "No se pudo crear tu  cuenta", Toast.LENGTH_SHORT).show();
+                                if (task.getException() instanceof FirebaseAuthUserCollisionException)//si hay alguna colision muestra el siguiente mensaje
+                                {
+                                    Toast.makeText(registro.this, "ya existe esta cuenta, intenta con otra", Toast.LENGTH_SHORT).show();
+                                }
+                                else//si se produce un error desconocido , muestra el siguiente mensaje
+                                {
+                                    Toast.makeText(registro.this, "No se pudo crear tu  cuenta", Toast.LENGTH_SHORT).show();
+                                }
                             }
+                            progressDialog.dismiss();//barra de progreso
                         }
-                        progressDialog.dismiss();//barra de progreso
-                    }
 
-                });
+                    });
+        }
+        else
+        {
+            Toast.makeText(registro.this, "Las contraseñas no coinciden",Toast.LENGTH_SHORT).show();
+        }
+
+
     }
 
     public void registrarUsuario(View view)

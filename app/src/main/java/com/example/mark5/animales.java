@@ -85,7 +85,7 @@ public class animales extends AppCompatActivity
     public void  buscar(View view )
     {
         textoIntroducido = (EditText)findViewById(R.id.editText);
-        textoProcesado = textoIntroducido.getText().toString();
+        textoProcesado = textoIntroducido.getText().toString().trim();
 
         if (!textoProcesado.isEmpty())
         {

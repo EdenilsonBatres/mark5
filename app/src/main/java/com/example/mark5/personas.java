@@ -54,14 +54,14 @@ public class personas extends AppCompatActivity
     public void  buscar(View view )
     {
         textoIntroducido = (EditText)findViewById(R.id.editText);
-        textoProcesado = textoIntroducido.getText().toString();
+        textoProcesado = textoIntroducido.getText().toString().trim();
 
         if (!textoProcesado.isEmpty())
         {
             for (int i = 0; i < listadoGiff.length; i++)
             {
                 acumulador = listadoGiff[i];
-                if (acumulador.equals(textoProcesado))
+                if (acumulador.equalsIgnoreCase(textoProcesado))
                 {
 
                     Toast.makeText(contexto, "Palabra encontrada", Toast.LENGTH_SHORT).show();
@@ -119,7 +119,7 @@ public class personas extends AppCompatActivity
 
 
             }
-            if (!acumulador.equals(textoProcesado))
+            if (!acumulador.equalsIgnoreCase(textoProcesado))
             {
                 Toast.makeText(contexto, "palabra NO encontrada", Toast.LENGTH_SHORT).show();
                 mostrarImagen = (ImageView)findViewById(R.id.imageView);
